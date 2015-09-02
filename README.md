@@ -6,7 +6,9 @@ Don't want to use the Windoze XP-inspired online compiler? Me neither!
 On Ubuntu, run
 
 ```
-sudo apt-get install gcc-arm-none-eabi
+sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded
+sudo apt-get update
+sudo apt-get install build-essential gcc-arm-none-eabi
 ```
 
 Double check the `Makefile` to verify that you have the mount directory for the KL25Z correct. This should be fairly standard,
